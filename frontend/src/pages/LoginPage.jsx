@@ -19,7 +19,8 @@ export default function LoginPage({ onLogin }) {
         try {
             if (isRegister) {
                 const res = await registerUser(form);
-                // Auto-login after registration
+                
+                // Auto-login after registrations 
                 const loginRes = await loginUser({ email: form.email, password: form.password });
                 onLogin(loginRes.data.token, loginRes.data.user);
             } else {
