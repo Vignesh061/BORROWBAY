@@ -22,7 +22,5 @@ export default defineConfig([
         sourceType: 'module',
       },
     },
-    rules: {
-    
-  },
+
 ])
